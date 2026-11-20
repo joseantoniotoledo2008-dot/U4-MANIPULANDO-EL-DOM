@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formación Académica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Portafolio Profesional</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link active" href="educacion.html">Educación</a></li>
+          <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="referencias.html">Referencias</a></li>
+        </ul>
+        <button id="btn-tema" class="btn btn-outline-light btn-sm" onclick="toggleModoOscuro()">
+          <i class="bi bi-moon"></i> Modo Oscuro
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h2 class="border-bottom pb-2 mb-4 text-primary"><i class="bi bi-mortarboard"></i> Formación Académica y Certificaciones</h2>
+
+    <!-- Tabla de Bootstrap solicitada en la consigna -->
+    <div class="table-responsive shadow-sm rounded">
+      <table class="table table-striped table-hover align-middle mb-0">
+        <thead class="table-dark">
+          <tr>
+            <th>Grado / Certificación</th>
+            <th>Institución</th>
+            <th>Estado / Periodo</th>
+            <th>Área de Enfoque</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fw-bold">Ingeniería de Sistemas Informáticos</td>
+            <td>Universidad Privada del Valle (Univalle)</td>
+            <td><span class="badge bg-success">En Curso (2024 - Presente)</span></td>
+            <td>Ingeniería de software, bases de datos y redes</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Certificación eKit Network & Digital Board</td>
+            <td>Huawei Technologies</td>
+            <td><span class="badge bg-primary">Completado (2026)</span></td>
+            <td>Configuración de redes y terminales digitales</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Programación Competitiva & Estructuras de Datos</td>
+            <td>Kattis / ICPC Training</td>
+            <td><span class="badge bg-info text-dark">Activo (2025 - 2026)</span></td>
+            <td>Algoritmos en C++, optimización y complejidad computacional</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Bachiller en Humanidades</td>
+            <td>Colegio Santa Cruz</td>
+            <td><span class="badge bg-secondary">Graduado</span></td>
+            <td>Formación general y fundamentos de ciencias exactas</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>Portafolio Web - Programación Web II &copy; 2026</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

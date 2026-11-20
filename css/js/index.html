@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datos Personales y Contacto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Barra de navegación compartida -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Portafolio Profesional</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="educacion.html">Educación</a></li>
+          <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="referencias.html">Referencias</a></li>
+        </ul>
+        <button id="btn-tema" class="btn btn-outline-light btn-sm" onclick="toggleModoOscuro()">
+          <i class="bi bi-moon"></i> Modo Oscuro
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="row align-items-center mb-5">
+      <!-- Columna izquierda: Imagen cuadrada fija -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img id="img-avatar" 
+             src="https://www.stelorder.com/wp-content/uploads/2021/09/portada-empresario-individual.jpg" 
+             referrerpolicy="no-referrer"
+             alt="Foto de Perfil" 
+             class="foto-perfil shadow rounded-4 mb-3" 
+             style="width: 220px; height: 220px; object-fit: cover; object-position: center top; border: 3px solid #0d6efd;">
+        <div>
+          <!-- Modificar Atributo con DOM -->
+          <button class="btn btn-primary btn-sm" onclick="cambiarFotoPerfil()">
+            <i class="bi bi-arrow-repeat"></i> Cambiar Foto (DOM: setAttribute)
+          </button>
+        </div>
+      </div>
+
+      <!-- Columna derecha: Información personal alineada -->
+      <div class="col-md-8 ps-md-4">
+        <h1 class="display-5 fw-bold text-primary">José Antonio Toledo</h1>
+        <p class="lead">Estudiante de Ingeniería de Sistemas | Desarrollador de Software</p>
+        <ul class="list-unstyled fs-5">
+          <li class="mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i> Santa Cruz de la Sierra, Bolivia</li>
+          <li class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i> toledo.sistemas@ejemplo.com</li>
+          <li class="mb-2"><i class="bi bi-phone-fill text-success me-2"></i> +591 70000000</li>
+          <li class="mb-2"><i class="bi bi-linkedin text-info me-2"></i> linkedin.com/in/ejemplo-toledo</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Formulario de Contacto -->
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">Formulario de Contacto Directo</h4>
+      </div>
+      <div class="card-body">
+        <form id="form-contacto">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="nombre" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="correo" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="correo" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">
+            <i class="bi bi-send"></i> Enviar Mensaje (DOM Event Property)
+          </button>
+          <button type="button" id="btn-alerta" class="btn btn-secondary ms-2">
+            Probar Evento (addEventListener)
+          </button>
+        </form>
+        <div id="mensaje-envio"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>Portafolio Web - Programación Web II &copy; 2026</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

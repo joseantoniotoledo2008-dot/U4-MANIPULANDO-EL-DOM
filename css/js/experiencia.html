@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiencia Laboral</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Portafolio Profesional</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="experiencia.html">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="educacion.html">Educación</a></li>
+          <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="referencias.html">Referencias</a></li>
+        </ul>
+        <button id="btn-tema" class="btn btn-outline-light btn-sm" onclick="toggleModoOscuro()">
+          <i class="bi bi-moon"></i> Modo Oscuro
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <h2 class="border-bottom pb-2 mb-4 text-primary"><i class="bi bi-briefcase"></i> Experiencia Laboral</h2>
+    <p class="text-muted">Pasa el cursor sobre los elementos para observar los eventos del DOM (mouseenter / mouseleave).</p>
+
+    <!-- Lista de experiencias usando Bootstrap List Group -->
+    <div class="list-group shadow-sm">
+      <div class="list-group-item list-group-item-action p-4 experiencia-item">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary fw-bold">Desarrollador y Administrador Web Freelance</h5>
+          <small class="badge bg-primary">2025 - Presente</small>
+        </div>
+        <p class="mb-1">Diseño y puesta en producción de sitios web corporativos responsivos, integración de catálogos y mantenimiento de servidores Linux.</p>
+        <small class="text-muted"><i class="bi bi-check-circle-fill text-success"></i> Tecnologías: HTML5, CSS3, JavaScript, Bootstrap, GitHub Pages, Linux.</small>
+      </div>
+
+      <div class="list-group-item list-group-item-action p-4 experiencia-item">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary fw-bold">Auxiliar de Prototipado y Sistemas Embebidos</h5>
+          <small class="badge bg-secondary">2024 - 2025</small>
+        </div>
+        <p class="mb-1">Diseño y simulación de circuitos de automatización con microcontroladores Arduino y ATmega328P para proyectos académicos y privados.</p>
+        <small class="text-muted"><i class="bi bi-check-circle-fill text-success"></i> Tecnologías: C++, Arduino IDE, Proteus, Tinkercad, Sensores I2C.</small>
+      </div>
+
+      <div class="list-group-item list-group-item-action p-4 experiencia-item">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary fw-bold">Técnico de Soporte e Infraestructura TI</h5>
+          <small class="badge bg-secondary">2023 - 2024</small>
+        </div>
+        <p class="mb-1">Configuración de redes LAN/WLAN locales, mantenimiento correctivo de estaciones de trabajo Windows y virtualización con VirtualBox.</p>
+        <small class="text-muted"><i class="bi bi-check-circle-fill text-success"></i> Tecnologías: Cableado estructurado, SSH, PowerShell, Diagnóstico de Hardware.</small>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>Portafolio Web - Programación Web II &copy; 2026</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
