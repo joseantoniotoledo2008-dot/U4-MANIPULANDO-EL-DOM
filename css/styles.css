@@ -1,0 +1,72 @@
+/* Variables y temas */
+:root {
+  --primary-color: #0d6efd;
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo oscuro implementado vía manipulación de clases DOM */
+body.dark-theme {
+  --bg-color: #1a1d20;
+  --text-color: #e9ecef;
+  --card-bg: #2b3035;
+}
+
+body.dark-theme .card,
+body.dark-theme .list-group-item,
+body.dark-theme .table {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border-color: #495057;
+}
+
+body.dark-theme .table-striped > tbody > tr:nth-of-type(odd) > * {
+  color: #f8f9fa;
+  background-color: #343a40;
+}
+
+/* Clases dinámicas añadidas con JS */
+.destacado {
+  box-shadow: 0 0 15px rgba(13, 110, 253, 0.45);
+  border: 2px solid #0d6efd !important;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.item-resaltado {
+  background-color: #fff3cd !important;
+  font-weight: bold;
+}
+
+body.dark-theme .item-resaltado {
+  background-color: #664d03 !important;
+  color: #fff !important;
+}
+
+.foto-perfil {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0d6efd;
+  transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+  transform: rotate(3deg) scale(1.04);
+}
+
+footer {
+  margin-top: auto;
+}
+
